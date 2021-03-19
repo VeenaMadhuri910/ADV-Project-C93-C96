@@ -40,3 +40,8 @@ function redirect(name) {
   localStorage.setItem("room_name" , name);
   window.location = "LC_pg.html";
 }
+function logout() {
+  localStorage.removeItem("user_name");
+  localStorage.removeItem("room_name");
+  window.location.replace("index.html");
+  }
